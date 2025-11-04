@@ -3,6 +3,9 @@
         <span class="fw-semibold">
             NimbusDocs <small class="text-secondary">Admin</small>
         </span>
-        <!-- espaço pra colocar algo no futuro (ex: ambiente, logo, etc.) -->
+        <!-- Espaço para informações futuras (ambiente, usuário logado, etc.) -->
+        <span class="small text-secondary">
+            Ambiente: <strong>Local</strong>
+        </span>
     </div>
 </header>

@@ -1,9 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
     <div class="container">
         <a class="navbar-brand" href="/admin">
-            Painel
+            Painel Administrativo
         </a>
 
-        <!-- Aqui depois colocamos os menus de admin (Usuários, Auditoria etc.) -->
+        <!-- 
+            Quando tivermos o usuário logado, podemos mostrar aqui:
+            - links para Usuários, Auditoria etc.
+            - dropdown com nome do admin + Sair
+        -->
     </div>
 </nav>
