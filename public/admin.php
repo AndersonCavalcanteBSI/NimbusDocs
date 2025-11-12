@@ -16,6 +16,13 @@ $dispatcher = simpleDispatcher(function (RouteCollector $r): void {
     $r->addRoute('POST', '/admin/login', [LoginController::class, 'handleLogin']);
 });
 
+$r->addRoute('GET', '/admin', function () {
+    echo '<div style="font-family:system-ui;padding:2rem">
+            <h2>Bem-vindo ao NimbusDocs Admin</h2>
+            <p>Login efetuado com sucesso.</p>
+          </div>';
+});
+
 // Descobre método e URI
 $httpMethod = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 $uri        = $_SERVER['REQUEST_URI']    ?? '/';

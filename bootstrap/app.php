@@ -6,6 +6,12 @@ use Dotenv\Dotenv;
 
 require __DIR__ . '/../vendor/autoload.php';
 
+use App\Infrastructure\Persistence\Connection;
+
+$pdo = Connection::make($config['db']);
+$config['pdo'] = $pdo; // disponibiliza para controllers
+return $config;
+
 // Carrega variáveis de ambiente
 $dotenv = Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->safeLoad();
